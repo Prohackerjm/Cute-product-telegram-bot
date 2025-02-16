@@ -74,23 +74,16 @@ def show_support(message):
 
 @bot.message_handler(func=lambda message: message.text == "پشتیبانی محصول 1")
 def support_1(message):
-    bot.send_message(message.chat.id, "📞 پشتیبانی محصول 1
-نام: مائده جماعتی
-آیدی: @abcd")
+    bot.send_message(message.chat.id, "📞 پشتیبانی محصول 1\nنام: مائده جماعتی\nآیدی: @abcd")
 
 @bot.message_handler(func=lambda message: message.text == "پشتیبانی محصول 2")
 def support_2(message):
-    bot.send_message(message.chat.id, "📞 پشتیبانی محصول 2
-نام: ملورین مرواریدی
-آیدی: @hello")
+    bot.send_message(message.chat.id, "📞 پشتیبانی محصول 2\nنام: ملورین مرواریدی\nآیدی: @hello")
 
 # 🔹 تماس با ما
 @bot.message_handler(func=lambda message: message.text == "تماس با ما")
 def contact_us(message):
-    bot.send_message(message.chat.id, "📞 تماس با ما
-🔹 آیدی کانال: @Pinterest_cute
-🔹 وب‌سایت: www.pinterest_cute.com
-🔹 شماره تماس: 5555555")
+    bot.send_message(message.chat.id, "📞 تماس با ما\n🔹 آیدی کانال: @Pinterest_cute\n🔹 وب‌سایت: www.pinterest_cute.com\n🔹 شماره تماس: 5555555")
 
 # 🔹 دکمه‌های بازگشت
 @bot.message_handler(func=lambda message: message.text == "بازگشت به محصولات")
