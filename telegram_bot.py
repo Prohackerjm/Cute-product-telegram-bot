@@ -113,9 +113,9 @@ def show_support(message):
     num = message.text.split(" ")[-1]
     if num in support_info:
         info = support_info[num]
-        bot.send_message(message.chat.id, f"پشتیبان: {info['name']}
-شماره: {info['phone']}
-آیدی: {info['id']}")
+        bot.send_message(message.chat.id, f"پشتیبان: {info['name']}")
+        bot.send_message(message.chat.id, f"شماره: {info['phone']}")
+        bot.send_message(message.chat.id, f"آیدی: {info['id']}")
 
 @bot.message_handler(func=lambda message: message.text == "📞 تماس با ما")
 def contact_info_handler(message):
